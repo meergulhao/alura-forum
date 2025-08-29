@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/alura_forum
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    format-sql: true
+    hibernate:
+        ddl-auto: update
+        jdbc:
+          lob:
+            non_contextual_creation: true
